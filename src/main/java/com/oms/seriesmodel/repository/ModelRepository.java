@@ -14,6 +14,7 @@ import com.oms.seriesmodelDto.ModelDto;
 public interface ModelRepository extends JpaRepository<Model, Integer> {
 
 	
-	@Query("select new com.oms.seriesmodelDto.ModelDto(o.modelName) from Model o where o.seriesId =:seriesId")
+	@Query("select new com.oms.seriesmodelDto.ModelDto(o.modelId,o.modelName,o.price) from Model o WHERE o.seriesId =:seriesId")
 	public List<ModelDto> getModel(@Param("seriesId") Integer seriesId);
 }
+

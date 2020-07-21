@@ -2,21 +2,21 @@ package com.oms.seriesmodelDto;
 
 public class ModelDto {
 
-    private String modelId;
+    private int modelId;
     
     private String modelName;
 	
 	private int seriesId;
 	
-	private Long price;
+	private long price;
 	
 	protected char isActive;
 	
-	public String getModelId() {
+	public int getModelId() {
 		return modelId;
 	}
 
-	public void setModelId(String modelId) {
+	public void setModelId(int modelId) {
 		this.modelId = modelId;
 	}
 
@@ -36,11 +36,11 @@ public class ModelDto {
 		this.seriesId = seriesId;
 	}
 
-	public Long getPrice() {
+	public long getPrice() {
 		return price;
 	}
 
-	public void setPrice(Long price) {
+	public void setPrice(long price) {
 		this.price = price;
 	}
 
@@ -52,10 +52,14 @@ public class ModelDto {
 		this.isActive = isActive;
 	}
 
-	public ModelDto(String modelName) {
+	public ModelDto(int modelId, String modelName ,long price) {
 		super();
+		this.modelId = modelId;
 		this.modelName = modelName;
+		this.price = price;
 	}
+
+	
 
 	
 }

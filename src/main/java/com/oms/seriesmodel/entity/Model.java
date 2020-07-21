@@ -15,7 +15,7 @@ public class Model {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name ="MODEL_ID")
-	private String modelId;
+	private int modelId;
 	
 	@Column(name ="MODEL_NAME")
 	private String modelName;
@@ -24,16 +24,16 @@ public class Model {
 	private int seriesId;
 	
 	@Column(name ="price")
-	private Long price;
+	private long price;
 	
 	@Column(name ="IS_ACTIVE")
 	protected char isActive;
 
-	public String getModelId() {
+	public int getModelId() {
 		return modelId;
 	}
 
-	public void setModelId(String modelId) {
+	public void setModelId(int modelId) {
 		this.modelId = modelId;
 	}
 
@@ -53,11 +53,11 @@ public class Model {
 		this.seriesId = seriesId;
 	}
 
-	public Long getPrice() {
+	public long getPrice() {
 		return price;
 	}
 
-	public void setPrice(Long price) {
+	public void setPrice(long price) {
 		this.price = price;
 	}
 
@@ -69,7 +69,7 @@ public class Model {
 		this.isActive = isActive;
 	}
 
-	public Model(String modelId, String modelName, int seriesId, Long price, char isActive) {
+	public Model(int modelId, String modelName, int seriesId, long price, char isActive) {
 		super();
 		this.modelId = modelId;
 		this.modelName = modelName;
