@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ctsjavafsd35
+Build-Jdk: 11.0.7
+Implementation-Title: series-model
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.oms.seriesmodel
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: https://spring.io/projects/spring-boot/series-model
+Created-By: Maven Integration for Eclipse
+
